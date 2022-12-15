@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE ServiceOrder SYSTEM "http://www.tangibleonline.com/dtd/orderlink/v3_1/ServiceOrder.dtd">
+<ServiceOrder version="3.1">
+	<MediaOptions>
+		<Set copies="1">
+			<MediaDefinitionProduct type="OL">
+				<MediaFormat>PreMasteredImageDVD</MediaFormat>
+				<MediaContentName>633277521031</MediaContentName>
+				<ProductId>633277521031</ProductId>
+				<CDLabel>WillowCreekDVD</CDLabel>
+				<LabelField number="1">Let Go / Open Up</LabelField>
+				<LabelField number="2"></LabelField>
+				<LabelField number="3"></LabelField>
+				<LabelField number="4"></LabelField>
+				<LabelField number="5"></LabelField>
+				<LabelField number="6"></LabelField>
+				<LabelField number="7"></LabelField>
+				<LabelField number="8"></LabelField>
+				<SilkScreen>
+					White-DVD
+				</SilkScreen>
+					<CDPackage>Audio-CDs-Clear</CDPackage>
+			</MediaDefinitionProduct>
+			<SetPackage />
+		</Set>
+		<MailLabel>default</MailLabel>
+		<OrderPackage />
+	</MediaOptions>
+	<OrderOptions>
+		<SenderOrderId>12041513882-0001</SenderOrderId>
+		<FeedBackOptions>
+			<ConfirmShipment />
+			<ConfirmMethod>logfile</ConfirmMethod><ConfirmURI>ben.robison@alliedvaughn.com</ConfirmURI>
+		</FeedBackOptions>
+	</OrderOptions>
+	<Sender>
+		<CompanyName>Allied Vaughn</CompanyName>
+		<ContactName>No One</ContactName>
+	</Sender>
+	<Recipient>
+		<CompanyName>ROBERT AITKEN</CompanyName>
+		<AttentionName></AttentionName>
+		<Address1>118 CRESTVIEW AVE.</Address1>
+		<Address2></Address2>
+		<City>POINTE CLAIRE</City>
+		<StateProvince>QC</StateProvince>
+		<PostalCode>H9R4A1</PostalCode>
+		<Country>CA</Country>
+		<EmailAddress>none@none.com</EmailAddress>
+		<Phone />
+		<ShipCarrier>WHS</ShipCarrier>
+		<ShipOption>InternalRush</ShipOption>
+	</Recipient>
+</ServiceOrder>
+

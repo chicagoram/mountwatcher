@@ -1,0 +1,1 @@
+/opt/java7/bin/java -cp .:/array2/watch/mnt_watcher:/array2/watch/mnt_watcher/mountwatch.jar: com.mlxod.mw.listener.WatchDirDriver /array2/watch/mnt_watcher/listen  /array2/watch/mnt_watcher/processed >> /array2/watch/mnt_watcher/logs/run.log &

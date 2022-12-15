@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyConfiguration>
+    <Properties>
+    <Property>
+          <name>TRACE</name>
+          <value><![CDATA[ Y]]> </value>
+        </Property>
+        <Property>
+            <name>EMAIL_NOTIFY</name>
+            <value><![CDATA[ Y]]> </value>
+        </Property>
+		<Property>
+            <name>EMAIL_CONFIG_DIR</name>
+            <value><![CDATA[/array2/watch/mnt_watcher/mail_config_props.txt]]> </value>
+        </Property>
+        <Property>
+            <name>EMAIL_SUBJECT</name>
+            <value> <![CDATA[ Content Migration Watch Dog - Process in Error]]></value>
+        </Property>
+         <Property>
+            <name>TO_EMAIL_ADDRESSES</name>
+            <value> <![CDATA[ram_1726@yahoo.com,,mark.duranty@alliedvaughn.com,ilmdura@gmail.com]]></value>
+        </Property>
+        <Property>
+            <name>FROM_EMAIL_ADDRESS</name>
+            <value><![CDATA[mlx.mod.support@alliedvaughn.com]]></value>
+        </Property>
+   </Properties>
+</PropertyConfiguration>

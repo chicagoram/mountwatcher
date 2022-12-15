@@ -1,0 +1,67 @@
+<project name="mountwatch" default="all" basedir=".">
+	<property name="src-dir" location="${basedir}/src" />
+	<property name="output-dir" value="${basedir}/deploy" />
+	<property name="dist-dir" value="${basedir}/dist" />
+	<property name="lib-dir" value="${basedir}/lib" />
+	<property name="dist-filename" value="mountwatch.jar" />
+	<property name="TALK" value="false" />
+	<path id="classpath.base">
+		<fileset dir="${lib-dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${lib-dir}">
+			<include name="**/*.zip" />
+		</fileset>
+	</path>
+
+	<target name="all" depends="makejar">
+	</target>
+
+	<target name="clean">
+		<echo message="cleaning build directories" />
+		<delete dir="${output-dir}" />
+	</target>
+	<target name="compile" depends="prepare">
+	  <javac srcdir="${src-dir}" destdir="${output-dir}" debug="on" deprecation="on" includeantruntime="false" optimize="on">
+	     <classpath refid="classpath.base" />
+	  </javac>
+	</target>
+	<target name="help">
+		<echo message="" />
+		<echo message="ant                      - Builds default project" />
+		<echo message="ant clean               - Cleans all directories" />
+		<echo message="ant compile           - Compiles the source code" />
+		<echo message="ant makejar           - Creates deployable jar" />
+	</target>
+	<target name="makejar" depends="compile">
+		<jar jarfile="${dist-dir}/deps.jar">
+			<zipgroupfileset dir="${lib-dir}">
+				<include name="**/*.jar" />
+			</zipgroupfileset>
+		</jar>
+		<sleep seconds="1" />
+
+		<jar jarfile="${dist-dir}/${dist-filename}" basedir="${output-dir}">
+			<fileset refid="resources" />
+
+			<zipfileset src="${dist-dir}/deps.jar" excludes="META-INF/*.SF" />
+			<manifest>
+				<attribute name="Manifest-Version" value="1.0" />
+
+			</manifest>
+		</jar>
+	</target>
+
+	<fileset id="resources" dir="${output-dir}">
+		<include name="**/*.properties" />
+		<include name="**/*.class" />
+		<include name="**/*.jar" />
+		<include name="**/*.bat" />
+		<include name="**/*.xml" />
+	</fileset>
+
+	<target name="prepare" depends="clean">
+		<mkdir dir="${output-dir}" />
+	</target>
+
+</project>
